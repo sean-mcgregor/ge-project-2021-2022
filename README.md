@@ -27,6 +27,12 @@ Class Group: DT211c/4 or TU857/4
 # Proposal submitted earlier can go here:
 This project will feature a beautiful procedurally generated world which the user can wander and explore. It will look like an immersive, natural, landscape, but feature a simple art style. There will be some animals to see around the landscape, too.
 
+References I found to help me are:
+
+	https://gamedevacademy.org/complete-guide-to-procedural-level-generation-in-unity-part-1/ 
+and 
+	https://medium.com/@glazychevaeo/unity3d-procedural-generated-low-poly-terrain-d11914ab9f71
+
 ## This is how to markdown text:
 
 This is *emphasis*
