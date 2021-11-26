@@ -21,6 +21,6 @@ public class CloudMover : MonoBehaviour
         int thrust = 10;
 
         //apply force to the cloud
-        cloudRigidBody.AddForce(0,0, thrust * cloudSpeed);
+        cloudRigidBody.AddForce(0,0, -thrust * cloudSpeed);
     }
 }
