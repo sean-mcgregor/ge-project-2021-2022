@@ -7,7 +7,7 @@ public class CloudMover : MonoBehaviour
     public Rigidbody cloudRigidBody;
 
     //create speed
-    public float cloudSpeed =  30f;
+    public float cloudSpeed =  2f;
 
     // Start is called before the first frame update
     void Start()

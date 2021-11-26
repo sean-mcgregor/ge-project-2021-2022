@@ -14,6 +14,7 @@ public class CloudSpawner : MonoBehaviour
     {
         InvokeRepeating ("SpawnObject", spawnTime, spawnDelay);
     }
+    
 
     // Update is called once per frame
     public void SpawnObject()

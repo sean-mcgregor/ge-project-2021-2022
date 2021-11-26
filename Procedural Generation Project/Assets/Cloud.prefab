@@ -220,7 +220,7 @@ Transform:
   m_GameObject: {fileID: 3537034562597267759}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7, y: 37, z: 107}
-  m_LocalScale: {x: 45, y: 15, z: 20}
+  m_LocalScale: {x: 45, y: 35, z: 20}
   m_Children:
   - {fileID: 3537034562270228688}
   - {fileID: 3537034562728101504}
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cloudRigidBody: {fileID: -1432619195279938710}
-  cloudSpeed: 30
+  cloudSpeed: 2
 --- !u!54 &-1432619195279938710
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -320,7 +320,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!1 &3537034562728101511
 GameObject:
