@@ -36,9 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\CloudMover.cs" />
      <Compile Include="Assets\TerrainGenerator.cs" />
      <Compile Include="Assets\CloudSpawner.cs" />
-     <Compile Include="Assets\CloudMover.cs" />
+     <Compile Include="Assets\ThirdPersonMovement.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.19f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -608,9 +609,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{47d89da3-4d75-10ed-d59b-3f36117ae6a1}</Project>
+      <Name>Cinemachine</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{68044e20-3dcc-7e57-140d-b594b36fdc3f}</Project>
       <Name>Unity.VSCode.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{2069a3a3-45b9-e04e-bcea-c9b308c32e39}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{220925ac-d15b-276b-57b9-20a764c21e53}</Project>
