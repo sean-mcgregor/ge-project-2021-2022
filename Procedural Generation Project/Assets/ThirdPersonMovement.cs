@@ -13,6 +13,9 @@ public class ThirdPersonMovement : MonoBehaviour
 
     float turnSmoothVelocity;
 
+    public float gravity = -9.81f;
+    Vector3 velocity;
+
     // Update is called once per frame
     void Update()
     {
@@ -30,5 +33,8 @@ public class ThirdPersonMovement : MonoBehaviour
             
             controller.Move(moveDir.normalized * speed * Time.deltaTime); 
         }
+
+        velocity.y += gravity * Time.deltaTime;
+        controller.Move(velocity * Time.deltaTime);
     }
 }
