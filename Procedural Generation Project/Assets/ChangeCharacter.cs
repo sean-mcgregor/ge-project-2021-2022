@@ -20,14 +20,31 @@ public class ChangeCharacter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Player.transform.position.y > 3.58)
+        {
+           
+            onWater = false;
+        } else {
+
+            onWater = true;
+        }
+
         if (onWater && !onWaterLastFrame)
         {
-            Vector3 rotation = new Vector3(0,Player.transform.localRotation.eulerAngles.y, 0);
+            Vector3 rotation = new Vector3(0, Player.transform.localRotation.eulerAngles.y, 0);
             Destroy(currentModel);
             currentModel = Instantiate(SecondPlayerModelPrefab, Player.transform.position, Quaternion.Euler(rotation));
             currentModel.transform.SetParent(Player.transform);
         }
+        else if (!onWater && onWaterLastFrame)
+        {
+            Vector3 rotation = new Vector3(0, Player.transform.localRotation.eulerAngles.y, 0);
+            Destroy(currentModel);
+            currentModel = Instantiate(FirstPlayerModelPrefab, Player.transform.position, Quaternion.Euler(rotation));
+            currentModel.transform.SetParent(Player.transform);
 
+        }
+        
         onWaterLastFrame = onWater;
     }
 }
