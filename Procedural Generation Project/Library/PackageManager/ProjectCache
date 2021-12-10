@@ -6,8 +6,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637746796031842474
-    m_Hash: 1885055580
+      ticks: 637746848778555904
+    m_Hash: 2662563935
   m_LockFileStatus:
     m_FilePath: C:/Users/seanm/Documents/ge-project-2021-2022/Procedural Generation
       Project/Packages/packages-lock.json
@@ -15,8 +15,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637746796032028702
-    m_Hash: 3673749293
+      ticks: 637746848778565871
+    m_Hash: 2437140745
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -3535,10 +3535,49 @@ m_PackageAssets:
       errors: []
       versions:
         all:
+        - 7.0.0
+        - 7.0.1
+        - 7.1.1
+        - 7.1.2
+        - 7.1.5
+        - 7.1.6
+        - 7.1.7
+        - 7.1.8
+        - 7.2.0
+        - 7.2.1
+        - 7.3.1
+        - 7.4.1
+        - 7.4.2
+        - 7.4.3
+        - 7.5.1
+        - 7.5.2
+        - 7.5.3
+        - 7.6.0
+        - 7.7.0
+        - 7.7.1
+        - 8.0.1
+        - 8.1.0
+        - 8.2.0
+        - 8.3.1
+        - 9.0.0-preview.15
+        - 9.0.0-preview.35
+        - 9.0.0-preview.57
+        - 9.0.0-preview.74
+        - 10.0.0-preview.27
+        - 10.1.0
+        - 10.2.0
+        - 10.2.1
+        - 10.2.2
+        - 10.3.1
+        - 10.3.2
+        - 10.4.0
+        - 10.5.0
         - 10.5.1
         - 10.6.0
+        - 10.7.0
         compatible:
         - 10.6.0
+        - 10.7.0
         verified: 10.6.0
       dependencies:
       - name: com.unity.render-pipelines.core
@@ -3565,7 +3604,7 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 637613657960000000
       documentationUrl: 
       hasRepository: 1
       repository:

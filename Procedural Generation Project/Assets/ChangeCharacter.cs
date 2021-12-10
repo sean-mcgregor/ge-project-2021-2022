@@ -32,9 +32,10 @@ public class ChangeCharacter : MonoBehaviour
             onWater = true;
         }
 
+        TrainPoof.transform.position = Player.transform.position;
+
         if (onWater && !onWaterLastFrame)
         {
-            TrainPoof.transform.position = Player.transform.position;
             TrainPoof.Play();
             Vector3 rotation = new Vector3(0, Player.transform.localRotation.eulerAngles.y, 0);
             Destroy(currentModel);
@@ -43,7 +44,6 @@ public class ChangeCharacter : MonoBehaviour
         }
         else if (!onWater && onWaterLastFrame)
         {
-            TrainPoof.transform.position = Player.transform.position;
             TrainPoof.Play();
             Vector3 rotation = new Vector3(0, Player.transform.localRotation.eulerAngles.y, 0);
             Destroy(currentModel);
