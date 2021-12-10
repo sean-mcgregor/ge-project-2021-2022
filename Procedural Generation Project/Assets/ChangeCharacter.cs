@@ -23,7 +23,7 @@ public class ChangeCharacter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Player.transform.position.y > 3.59)
+        if(Player.transform.position.y > 0.38)
         {
            
             onWater = false;
