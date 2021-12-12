@@ -32,7 +32,7 @@ public class CloudSpawner : MonoBehaviour
     // Update is called once per frame
     public void SpawnObject()
     {
-        Vector3 spawnPosition = new Vector3(transform.position.x + Random.Range(-150f, 150f), transform.position.y + Random.Range(-25f, 50f), transform.position.z);
+        Vector3 spawnPosition = new Vector3(transform.position.x + Random.Range(-200f, 200f), transform.position.y + Random.Range(-5f, 50f), transform.position.z + Random.Range(-30f, 30f));
         GameObject newCloud = Instantiate (cloud, spawnPosition, transform.rotation);
         newCloud.tag = "Cloud";
 
