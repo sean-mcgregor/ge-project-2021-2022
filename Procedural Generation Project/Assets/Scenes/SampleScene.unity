@@ -422,8 +422,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cloud: {fileID: 3537034562597267759, guid: b5d977cc9ce79834fa119f9325956665, type: 3}
   spawnTime: 1
-  spawnDelay: 2
-  stopSpawning: 1
+  spawnDelay: 5
+  stopSpawning: 0
+  activeClouds: []
+  maxClouds: 12
 --- !u!4 &214458184
 Transform:
   m_ObjectHideFlags: 0
@@ -432,7 +434,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214458182}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 153, y: 89, z: 275}
+  m_LocalPosition: {x: 153, y: 89, z: 1250}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -511,7 +513,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328384433}
-  m_LocalRotation: {x: 0.14745699, y: 2.645117e-15, z: -3.9891632e-17, w: 0.9890685}
+  m_LocalRotation: {x: 0.147457, y: -0.000000014738268, z: 0.0000000021972804, w: 0.9890685}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1509,7 +1511,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951757271}
-  m_LocalRotation: {x: 0.056317408, y: -0.000000010577857, z: 5.9666433e-10, w: 0.99841297}
+  m_LocalRotation: {x: 0.056317408, y: -0.000000026172367, z: 0.0000000014763026, w: 0.99841297}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1595,7 +1597,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.07826296, y: -0.00000000854685, z: 2.3947128e-10, w: 0.9969328}
+  m_LocalRotation: {x: 0.07826296, y: -0.000000023662093, z: 0.0000000014469972, w: 0.9969328}
   m_LocalPosition: {x: 20, y: 24.367195, z: 5.679056}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2778,8 +2780,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cloud: {fileID: 3537034562597267759, guid: b5d977cc9ce79834fa119f9325956665, type: 3}
   spawnTime: 1
-  spawnDelay: 2
-  stopSpawning: 1
+  spawnDelay: 5
+  stopSpawning: 0
+  activeClouds: []
+  maxClouds: 12
 --- !u!4 &1728699636
 Transform:
   m_ObjectHideFlags: 0
@@ -2788,7 +2792,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728699634}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 38.6, y: 74.5, z: 260}
+  m_LocalPosition: {x: 38.6, y: 74.5, z: 1250}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
