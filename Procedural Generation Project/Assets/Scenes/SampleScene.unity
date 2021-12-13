@@ -464,7 +464,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328384433}
-  m_LocalRotation: {x: 0.16969803, y: -0.000000023751763, z: 0.0000000040899475, w: 0.98549616}
+  m_LocalRotation: {x: 0.16969803, y: -0.000000014020549, z: 0.0000000024142761, w: 0.9854961}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1719,7 +1719,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.05128203, y: 0.00081815425, z: 0.00005870327, w: 0.99868387}
+  m_LocalRotation: {x: 0.05128205, y: 0.0008181573, z: 0.000058702266, w: 0.99868387}
   m_LocalPosition: {x: 20, y: 25.048687, z: 5.774932}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2186,11 +2186,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onWater: 0
-  FirstPlayerModelPrefab: {fileID: 7591158257919548118, guid: 8735a1fdf13de6e49ab4f716eb0f2da3, type: 3}
-  SecondPlayerModelPrefab: {fileID: 2829207990506691190, guid: 4a14627defe613c40a17bbf54f4c236f, type: 3}
+  trainModel: {fileID: 7591158257919548118, guid: 8735a1fdf13de6e49ab4f716eb0f2da3, type: 3}
+  boatModel: {fileID: 2829207990506691190, guid: 4a14627defe613c40a17bbf54f4c236f, type: 3}
   Player: {fileID: 1086257580}
-  PoofSound: {fileID: 1086257585}
-  TrainPoof: {fileID: 467725025}
+  transitionSound: {fileID: 1086257585}
+  transitionVisualPoof: {fileID: 467725025}
 --- !u!82 &1086257585
 AudioSource:
   m_ObjectHideFlags: 0
