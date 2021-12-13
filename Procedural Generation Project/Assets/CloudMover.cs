@@ -4,23 +4,22 @@ using UnityEngine;
 
 public class CloudMover : MonoBehaviour
 {   
-    public Rigidbody cloudRigidBody;
+    public Rigidbody cloudRigidBody;    // Rigid body for cloud physics and force application
+    public float cloudSpeed =  4f;      // Speed of cloud
 
-    //create speed
-    public float cloudSpeed =  2f;
 
-    // Start is called before the first frame update
+    // Start is called once when Play is pressed
     void Start()
     {
-        cloudRigidBody = GetComponent<Rigidbody>();
+        cloudRigidBody = GetComponent<Rigidbody>(); // Get rigid body component
     }
+
 
     // Update is called once per frame
     void Update()
     {
         int thrust = 10;
 
-        //apply force to the cloud
-        cloudRigidBody.AddForce(0,0, -thrust * cloudSpeed);
+        cloudRigidBody.AddForce(0,0, -thrust * cloudSpeed); //apply force to the cloud
     }
 }

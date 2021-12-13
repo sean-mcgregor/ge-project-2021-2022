@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cloudRigidBody: {fileID: -1432619195279938710}
-  cloudSpeed: 2
+  cloudSpeed: 4
 --- !u!54 &-1432619195279938710
 Rigidbody:
   m_ObjectHideFlags: 0

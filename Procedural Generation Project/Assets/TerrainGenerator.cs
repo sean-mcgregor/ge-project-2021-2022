@@ -4,27 +4,30 @@ using UnityEngine;
 
 public class TerrainGenerator : MonoBehaviour {
 
-    public int terrain_depth = 10;
-    public int terrain_width = 256;
-    public int terrain_height = 256;
-    public float terrain_scale = 10f;
-    public float terrain_offset_x =  10f;
+    public int terrain_depth = 10;          // Depth of terrain
+    public int terrain_width = 256;         // Width of terrain
+    public int terrain_height = 256;        // Height of terrain
+    public float terrain_scale = 10f;       // Scale of terrain
+    public float terrain_offset_x =  10f;   
     public float terrain_offset_y =  10f;
 
-    public int counter = 0;
 
-    void Start() {
-        
-        generateOffset();
+    // Start is called once when Play is pressed
+    void Start() 
+    {
+        generateOffset(); // Generates entire terrain when start is called
     }
 
+
+    // Update is called once per frame
     void Update(){
 
-        Terrain terrain =  GetComponent<Terrain>();
+        Terrain terrain =  GetComponent<Terrain>();                 // Getting terrain object
         terrain.terrainData = GenerateTerrain(terrain.terrainData);
         terrain_offset_x = terrain_offset_x + 0.01f;
     }
 
+    
     void generateOffset() {
 
         terrain_offset_x = Random.Range(0f, 50f);
