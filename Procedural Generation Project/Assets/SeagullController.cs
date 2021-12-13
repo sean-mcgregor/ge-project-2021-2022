@@ -11,6 +11,7 @@ public class SeagullController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        transform.position = new Vector3(Random.Range(10,246), Random.Range(10, 15), Random.Range(10, 246));
         nextWaypoint = new Vector3(Random.Range(10,246), Random.Range(10, 15), Random.Range(10, 246));
     }
 
