@@ -18,7 +18,6 @@ public class ChangeCharacter : MonoBehaviour
     // Start is called once when Play is pressed
     private void Start()
     {
-        
         // This gets the player model, which at the beginning is the train
         currentModel = Player.transform.GetChild(0).gameObject;
     }
@@ -27,7 +26,6 @@ public class ChangeCharacter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         // Checking if player is on water, by analysing player height
         if(Player.transform.position.y > 0.38)
         {
@@ -58,8 +56,8 @@ public class ChangeCharacter : MonoBehaviour
     // Changes from currentModel to the model which is passed in
     void switchCharacter(GameObject nextCharacter)
     {
-        transitionVisualPoof.Play();   // Playing the visual playermodel transition effect
-        transitionSound.Play();   // Playing the audio for transition effect
+        transitionVisualPoof.Play();    // Playing the visual playermodel transition effect
+        transitionSound.Play();         // Playing the audio for transition effect
         
         // Gets the direction which the player is currently facing
         Vector3 rotation = new Vector3(0, Player.transform.localRotation.eulerAngles.y, 0);

@@ -464,7 +464,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328384433}
-  m_LocalRotation: {x: 0.16969803, y: -0.000000014020549, z: 0.0000000024142761, w: 0.9854961}
+  m_LocalRotation: {x: 0.16969804, y: -0.000000006282802, z: 0.0000000010818704, w: 0.9854961}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1719,7 +1719,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.05128205, y: 0.0008181573, z: 0.000058702266, w: 0.99868387}
+  m_LocalRotation: {x: 0.051282056, y: 0.0008181511, z: 0.000058701036, w: 0.99868387}
   m_LocalPosition: {x: 20, y: 25.048687, z: 5.774932}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2155,6 +2155,7 @@ MonoBehaviour:
   speed: 15
   turnSmoothTime: 0.1
   gravity: -9.81
+  velocity: {x: 0, y: 0, z: 0}
 --- !u!143 &1086257583
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2324,7 +2325,6 @@ MonoBehaviour:
   terrain_scale: 5
   terrain_offset_x: 10
   terrain_offset_y: 10
-  counter: 0
 --- !u!154 &1090586865
 TerrainCollider:
   m_ObjectHideFlags: 0
