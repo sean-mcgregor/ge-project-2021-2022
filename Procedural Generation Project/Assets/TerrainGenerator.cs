@@ -20,25 +20,26 @@ public class TerrainGenerator : MonoBehaviour {
 
 
     // Update is called once per frame
-    void Update(){
-
+    void Update()
+    {
         Terrain terrain =  GetComponent<Terrain>();                 // Getting terrain object
-        terrain.terrainData = GenerateTerrain(terrain.terrainData);
+        terrain.terrainData = GenerateTerrain(terrain.terrainData); // Generating new terrain data
         terrain_offset_x = terrain_offset_x + 0.01f;
     }
 
     
-    void generateOffset() {
-
+    void generateOffset()
+    {
         terrain_offset_x = Random.Range(0f, 50f);
         terrain_offset_y = Random.Range(0f, 200f);
     }
 
-    // Build a 2D array of heights
-    float[,] GenerateHeights(){
 
+    // Returns a 2D array of heights
+    float[,] GenerateHeights()
+    {
         int yToSendValue = 0;
-        float[,] heights = new float[terrain_width, terrain_height];
+        float[,] heights = new float[terrain_width, terrain_height]; // new float array
         
         for (int x = 0; x < terrain_width; x++) {
 
@@ -51,7 +52,7 @@ public class TerrainGenerator : MonoBehaviour {
                     yToSendValue = (y + 200);
                 }
 
-                heights[x,y] = CalculateHeights(x,yToSendValue);
+                heights[x,y] = CalculateHeights(x,yToSendValue); // Perlin noise values
             }
 
         }
@@ -59,22 +60,22 @@ public class TerrainGenerator : MonoBehaviour {
         return heights;
     }
 
-    float CalculateHeights (int x, int y) {
 
+    float CalculateHeights (int x, int y)
+    {
         float xCoordinate = ((float)x / terrain_width) * terrain_scale + terrain_offset_x;
         float yCoordinate = ((float)y / terrain_height) * terrain_scale + terrain_offset_y;
 
         return Mathf.PerlinNoise(xCoordinate, yCoordinate);
     }
 
-    TerrainData GenerateTerrain(TerrainData data) {
-        
+
+    TerrainData GenerateTerrain(TerrainData data)
+    {
         data.heightmapResolution = terrain_width + 1;
-        data.size = new Vector3(terrain_width, terrain_depth, terrain_height);
+        data.size = new Vector3(terrain_width, terrain_depth, terrain_height); // Dimensions of terrain
         data.SetHeights(0, 0, GenerateHeights());
 
         return data;
     }
-
-    
 }
