@@ -36,9 +36,11 @@ The Unity engine is used to run C# code which I have written.
 
 The project consists of multiple different models, each of which have scripts associated with them and controlling them.
 
-The main part of the project is the procedurally generated terrain. It is generated using Perlin noise. In the Update() function, which is called once per frame, the next row of terrain is generated, and the terrain is shifted slightly on the X axis.
+The main part of the project is the procedurally generated terrain. It is generated using Perlin noise. In the Update() function, which is called once per frame, the next row of terrain is generated, and the terrain is shifted slightly on the X axis. This is done using the offset value.
 
-The player also changes between character depending on the type of terrain they are on (water or land). This is done by checking the location of the player on the Y axis. The player changes model when they enter a new terrain. The change of character is concealed by a visual effect.
+The player also changes between character depending on the type of terrain they are on (water or land). This is done by checking the location of the player on the Y axis. The player changes model when they enter a new terrain. The change of character is concealed by a visual effect. This visual effect is also paired with audio.
+
+Audio is also a large part of the project, as I wanted to ensure that it was an immersive environment. The audio is achieved using audio sources which are attached to multiple objects, as well as an audio listener which is attached to the player. When the player is in the vicinity of seabirds, they get louder and the sound is directional. Additionally, I blended 2 audio sources together to achieve the desired effect of the boat model.
 
 # List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
 | Class/asset | Source |
