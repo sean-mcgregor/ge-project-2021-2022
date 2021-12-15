@@ -24,7 +24,7 @@ public class TerrainGenerator : MonoBehaviour {
     {
         Terrain terrain =  GetComponent<Terrain>();                 // Getting terrain object
         terrain.terrainData = GenerateTerrain(terrain.terrainData); // Generating new terrain data
-        terrain_offset_x = terrain_offset_x + 0.01f;
+        terrain_offset_x = terrain_offset_x + 0.01f;                // Shifts terrain on x axis
     }
 
     
