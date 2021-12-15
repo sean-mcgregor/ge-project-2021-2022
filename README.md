@@ -40,7 +40,7 @@ The project consists of multiple different models, each of which have scripts as
 
 ![image](https://user-images.githubusercontent.com/55545448/146172396-42e01843-cf2f-4f28-b693-ba36312277e4.png)
 
-Image of
+Image of script used to changed character, as displayed in Unity engine
 
 The main part of the project is the procedurally generated terrain. It is generated using Perlin noise. In the Update() function, which is called once per frame, the next row of terrain is generated, and the terrain is shifted slightly on the X axis. This is done using the offset value.
 
