@@ -29,9 +29,13 @@ You can run the following command in your command line or terminal in order to d
 git clone https://github.com/sean-mcgregor/ge-project-2021-2022.git
 ```
 
-Run the Unity Hub and click the *ADD* button. Locate the project folder and open it. When finished importing, you can run the project with the Unity engine. Press the play button and you can start to control your character. Make sure to turn your volume up! Try using headphones for 3D audio.
+Run the Unity Hub and click the *ADD* button. Locate the project folder and open it. When finished importing, you can run the project with the Unity engine. This will open the game in Unity in such a way where the user can edit variables and change code. Press the play button and you can start to control your character.
+
+Alternatively, you can navigate to the build folder in \Procedural Generation Project\Built Project\ and then run the "Procedural Generation Project.exe" file. This will run the game in a more standard "game" format in its own window.
 
 Once the game is running, you can use the W, A, S, and D keys to control your player and explore the world. You can stop the game using the Play button again, or alternatively the pause button.
+
+Make sure to turn your volume up! Try using headphones for 3D audio.
 
 # How it works
 The Unity engine is used to run C# code which I have written.
