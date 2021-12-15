@@ -31,6 +31,8 @@ git clone https://github.com/sean-mcgregor/ge-project-2021-2022.git
 
 Run the Unity Hub and click the *ADD* button. Locate the project folder and open it. When finished importing, you can run the project with the Unity engine. Press the play button and you can start to control your character. Make sure to turn your volume up! Try using headphones for 3D audio.
 
+Once the game is running, you can use the W, A, S, and D keys to control your player and explore the world. You can stop the game using the Play button again, or alternatively the pause button.
+
 # How it works
 The Unity engine is used to run C# code which I have written.
 
