@@ -66,6 +66,9 @@ else if (!onWater && onWaterLastFrame)
 
 The two characters which the player can change between are the train character and the boat character. 
 
+![image](https://user-images.githubusercontent.com/55545448/146170223-bc1db72f-c17b-4135-9f7e-4779743a0c09.png)
+Image of Train Model
+
 
 
 
