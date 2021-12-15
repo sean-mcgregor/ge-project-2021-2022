@@ -67,12 +67,14 @@ else if (!onWater && onWaterLastFrame)
 The two characters which the player can change between are the train character and the boat character. 
 
 ![image](https://user-images.githubusercontent.com/55545448/146170223-bc1db72f-c17b-4135-9f7e-4779743a0c09.png)
+
 Image of Train Model
 
 ![image](https://user-images.githubusercontent.com/55545448/146170705-6f4c40ef-c4db-4640-a6cd-279b736b11f4.png)
+
 Image of Boat model
 
-Audio is also a large part of the project, as I wanted to ensure that it was an immersive environment. Each player model has its own unique sounds associated with it. The audio is achieved using audio sources which are attached to multiple objects, as well as an audio listener which is attached to the player. When the player is in the vicinity of seabirds, they get louder and the sound is directional. Additionally, I blended 2 audio sources together to achieve the desired effect of the boat model.
+Audio is also a large part of the project, as I wanted to ensure that it was an immersive environment. Each player model has its own unique sounds associated with it. The audio is achieved using audio sources which are attached to multiple objects, as well as an audio listener which is attached to the player. I blended 2 audio sources together to achieve the desired effect of the boat model. These audio sources are the sound of the water and the sound of engine humming. Additionally, when the player is in the vicinity of seabirds, they get louder and the sound is directional.
 
 # List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
 | Class/asset | Source |
