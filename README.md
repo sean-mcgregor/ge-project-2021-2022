@@ -64,7 +64,12 @@ else if (!onWater && onWaterLastFrame)
 }
 ```
 
-Audio is also a large part of the project, as I wanted to ensure that it was an immersive environment. The audio is achieved using audio sources which are attached to multiple objects, as well as an audio listener which is attached to the player. When the player is in the vicinity of seabirds, they get louder and the sound is directional. Additionally, I blended 2 audio sources together to achieve the desired effect of the boat model.
+The two characters which the player can change between are the train character and the boat character. 
+
+
+
+
+Audio is also a large part of the project, as I wanted to ensure that it was an immersive environment. Each player model has its own unique sounds associated with it. The audio is achieved using audio sources which are attached to multiple objects, as well as an audio listener which is attached to the player. When the player is in the vicinity of seabirds, they get louder and the sound is directional. Additionally, I blended 2 audio sources together to achieve the desired effect of the boat model.
 
 # List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
 | Class/asset | Source |
