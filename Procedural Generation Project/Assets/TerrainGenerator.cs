@@ -15,7 +15,7 @@ public class TerrainGenerator : MonoBehaviour {
     // Start is called once when Play is pressed
     void Start() 
     {
-        generateOffset(); // Generates entire terrain when start is called
+        generateOffset(); // Shifts entire terrain when start is called
     }
 
 
